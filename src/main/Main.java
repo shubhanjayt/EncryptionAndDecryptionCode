@@ -20,6 +20,7 @@ public class Main {
             Scanner obj = new Scanner(System.in);
             System.out.println("Enter a String ");
             String p = obj.nextLine();
+            byte[] input = p.getBytes();
 
 
         }
