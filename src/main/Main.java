@@ -21,6 +21,7 @@ public class Main {
             System.out.println("Enter a String ");
             String p = obj.nextLine();
             byte[] input = p.getBytes();
+            cipher.update(input);
 
 
         }
