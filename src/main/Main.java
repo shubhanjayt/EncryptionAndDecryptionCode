@@ -22,6 +22,7 @@ public class Main {
             String p = obj.nextLine();
             byte[] input = p.getBytes();
             cipher.update(input);
+            byte[] cipherText = cipher.doFinal();
 
 
         }
