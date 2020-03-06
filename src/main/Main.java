@@ -19,6 +19,7 @@ public class Main {
             cipher.init(Cipher.ENCRYPT_MODE, publicKey);
             Scanner obj = new Scanner(System.in);
             System.out.println("Enter a String ");
+            String p = obj.nextLine();
 
 
         }
