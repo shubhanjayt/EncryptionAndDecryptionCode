@@ -1,5 +1,6 @@
 package main;
 
+import javax.crypto.Cipher;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.PublicKey;
@@ -13,6 +14,7 @@ public class Main {
             keyPairGen.initialize(2048);
             KeyPair pair = keyPairGen.generateKeyPair();
             PublicKey publicKey = pair.getPublic();
+            Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
 
 
         }
