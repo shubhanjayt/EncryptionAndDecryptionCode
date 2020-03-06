@@ -15,6 +15,7 @@ public class Main {
             KeyPair pair = keyPairGen.generateKeyPair();
             PublicKey publicKey = pair.getPublic();
             Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+            cipher.init(Cipher.ENCRYPT_MODE, publicKey);
 
 
         }
