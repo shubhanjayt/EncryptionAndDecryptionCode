@@ -28,9 +28,11 @@ public class Main {
             cipher.init(Cipher.DECRYPT_MODE, pair.getPrivate());
             System.out.println("Decrypted String is ");
             byte[] decipheredText = cipher.doFinal(cipherText);
-
-
+            System.out.println(new String(decipheredText));
         }
     }
 
 }
+
+
+
