@@ -5,6 +5,7 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.PublicKey;
 import java.security.Signature;
+import java.util.Scanner;
 
 public class Main {
     public static class CipherDecrypt {
@@ -16,6 +17,7 @@ public class Main {
             PublicKey publicKey = pair.getPublic();
             Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
             cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+            Scanner obj = new Scanner(System.in);
 
 
         }
