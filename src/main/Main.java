@@ -27,6 +27,7 @@ public class Main {
             System.out.println(new String(cipherText, "UTF8"));
             cipher.init(Cipher.DECRYPT_MODE, pair.getPrivate());
             System.out.println("Decrypted String is ");
+            byte[] decipheredText = cipher.doFinal(cipherText);
 
 
         }
