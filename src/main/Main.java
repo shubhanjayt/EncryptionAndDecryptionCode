@@ -23,6 +23,7 @@ public class Main {
             byte[] input = p.getBytes();
             cipher.update(input);
             byte[] cipherText = cipher.doFinal();
+            System.out.println("Encrypted String is ");
 
 
         }
