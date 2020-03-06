@@ -1,5 +1,6 @@
 package main;
 
+import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.Signature;
 
@@ -9,6 +10,7 @@ public class Main {
             Signature sign = Signature.getInstance("SHA256withRSA");
             KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
             keyPairGen.initialize(2048);
+            KeyPair pair = keyPairGen.generateKeyPair();
 
 
         }
